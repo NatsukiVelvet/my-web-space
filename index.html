@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Project Title</title>
+  <link rel="stylesheet" href="test.css" />
+  <script type = "module" src = "src/components/weather-widget2.js"></script>
+</head>
+<body class="bgtitle">
+  
+
+  <div class="main-box">
+
+    <div class="grid-box">
+
+      <!-- Row 1: Image -->
+      <div class="grid-image">
+        <div class="image-frame">
+          <img src="https://files.catbox.moe/6471i2.png" alt="Image" class="base-image">
+
+          <div class="gif-overlay"></div>
+        </div>
+      </div>
+
+
+      <!-- Row 2: Info split into 3 columns -->
+      <div class="grid-info">
+
+
+        <div class="side-tab">[text placeholder]</div>
+
+        
+
+        <!--WELCOMING MESSAGE-->
+        <div class="Welcome-info">
+          
+          <div class  = "info-box" style = 'font-family: "MS Gothic", sans-serif; '>
+
+            <p>Welcome one and all to our beloved hag Yukari Yakumo's shrine! 
+            The Necrofantastical Den is only a WIP online home of a lad who loves to 
+            spread the masterpiece that is Touhou music and its surrounding circles.
+            </p>
+            <br> </br>
+
+            <p>Of course of course, this is also a personal space <span style = "color:blueviolet; "><strong>which currently serves as an Assignment for web technology class</strong></span>. 
+            But in time, I shall renovate this space into a cozy lounge cuz I really love webcore stuff. <span class = "stay-tuned">Stay tuned ✨</span></p>
+
+            <div style = "display:flex;">
+              
+              
+              <img src = "https://files.catbox.moe/shm0ii.png" style = 
+            
+              "height : 500px;
+              object-position: center;
+              align-self: flex-end;
+              margin-left: 300px; ">
+            </div>
+
+
+          </div>
+        </div>
+
+
+      </div>
+
+      <!-- Row 3: Footer or description -->
+      <div class="grid-dashboard">
+        <div class = "todo">[todo list here]</div>
+        
+
+        <div class = "weather">
+          <weather-widget2></weather-widget2>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
