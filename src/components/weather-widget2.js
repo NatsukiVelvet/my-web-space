@@ -10,7 +10,7 @@ class DailyWeatherGraph extends LitElement {
       box-shadow:none;
       position:relative;
       overflow:visible;
-      font-family: "MS Gothic", sans-serif; 
+      font-family: "Noto Sans JP", "MS Gothic", sans-serif;
       font-size: 1em;
       margin: 5px;
     }
