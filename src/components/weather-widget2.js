@@ -46,12 +46,12 @@ class DailyWeatherGraph extends LitElement {
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     }
     .weather-icon {
-      font-size: 3rem;
+
       margin-bottom: 1rem;
       padding: 40px;
     }
     .temp, .temp-range {
-      font-size: 1.12rem;
+      font-size: 1.12em;
     }
     .window, .window-body, .window * {
       font-family: "MS Gothic", sans-serif !important;
@@ -60,7 +60,7 @@ class DailyWeatherGraph extends LitElement {
       
     }
     .window-body {
-      font-size: 1.1rem;
+      font-size: 1.3em;
     }
     .hourly-modal {
       position: fixed;
@@ -248,7 +248,8 @@ class DailyWeatherGraph extends LitElement {
                   </div>
                   <div class="window-body">
                     <p><strong>${temp}°C</strong></p>
-                    <p>Temperature range: ${minTemp}°C to ${maxTemp}°C</p>
+                    <p>Temperature range:</p>
+                    <p style = "margin-top:-10px;">${minTemp}°C to ${maxTemp}°C</p>
                     <p>${weatherTypeText}</p>
                     <p>💧 ${humidity}% / 🌧️ ${precipChance}%</p>
                   </div>
