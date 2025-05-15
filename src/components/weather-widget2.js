@@ -13,6 +13,10 @@ class DailyWeatherGraph extends LitElement {
       font-family: "MS Gothic", sans-serif;
       font-size: 1em;
       margin: 5px;
+
+
+      
+      
     }
     .title-bar {
       background-image: linear-gradient(to right,rgb(37, 59, 24),rgb(80, 98, 61));  
@@ -51,6 +55,9 @@ class DailyWeatherGraph extends LitElement {
     }
     .window, .window-body, .window * {
       font-family: "MS Gothic", sans-serif !important;
+      
+
+      
     }
     .window-body {
       font-size: 1.1rem;
@@ -66,12 +73,12 @@ class DailyWeatherGraph extends LitElement {
     
       z-index: 10000;
       box-shadow: none;
-
-
-      
       
       
     }
+
+  p, td {
+      }
 
     /*for the progress bar*/
     @keyframes loadBar {
@@ -241,7 +248,7 @@ class DailyWeatherGraph extends LitElement {
                   </div>
                   <div class="window-body">
                     <p><strong>${temp}°C</strong></p>
-                    <p>${maxTemp}°C / ${minTemp}°C</p>
+                    <p>Temperature range: ${minTemp}°C to ${maxTemp}°C</p>
                     <p>${weatherTypeText}</p>
                     <p>💧 ${humidity}% / 🌧️ ${precipChance}%</p>
                   </div>
@@ -272,8 +279,8 @@ class DailyWeatherGraph extends LitElement {
 
 
 
-              <div class="window-body" style = "width : 330px;">
-                <div class="sunken-panel" style="height: 360px;">
+              <div class="window-body" style = "width : 337px;">
+                <div class="sunken-panel" style="height: 360px; ">
                   <table class="interactive">
 
 
@@ -282,7 +289,7 @@ class DailyWeatherGraph extends LitElement {
                         <th>Time</th>
                         <th>Temperature</th>
                         <th>Humidity</th>
-                        <th>Precipitation</th>
+                        <th>Chance of Rain</th>
                       </tr>
                     </thead>
 
