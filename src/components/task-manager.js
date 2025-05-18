@@ -357,8 +357,7 @@ closeModal(){
  static styles = css`
   .submit-form {
   position: absolute;
-  margin-top: -100px;
-  margin-left: -300px;
+  margin-left: -200px;
   
   }
 
