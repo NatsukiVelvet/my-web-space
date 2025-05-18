@@ -35,7 +35,7 @@ body {
 }
 
 .main-box {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 80px auto; /* center it */
   padding: 20px;
   background: rgba(20, 20, 20, 0.6); /* translucent dark */
@@ -62,6 +62,14 @@ body {
   grid-template-columns: 1fr 2fr;
 }
 
+
+.side-tab {
+
+  display: grid;
+  gap: 20px;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
 .grid-dashboard{
 
   display: grid;
@@ -69,9 +77,19 @@ body {
   background-color: transparent;
 }
 
+.todo-ad{
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.ad{
+  justify-self: center;
+}
+
 .image-frame {
   position: relative;
-  width: 895px;
+  width: 1095px;
   height: 230px;
   border-style: solid;
   border: 3px ridge white;
@@ -138,4 +156,60 @@ body {
   100% {
     color: #6666ff;
   }
+}
+
+
+.todo {
+  padding: 20px;
+
+}
+
+.weather{
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+
+
+/*From  https://codepen.io/ColdCalzone/pen/RwzPMJp */
+
+.buttons-n-blinkers {
+  position: fixed;    
+        
+  width: 720px;
+  margin-left: 30px;
+  overflow: hidden;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.buttons-n-blinkers > div {
+  animation: marquee 10s linear infinite;
+  animation-play-state: paused;
+  animation-delay: -6s; /* This MUST be -duration/2 */
+  width: 100%;
+  min-width: fit-content;
+  text-wrap: nowrap;
+}
+
+.buttons-n-blinkers > div.follower {
+  position: absolute;
+  top: 0;
+  animation-delay: 0s;
+}
+
+.buttons-n-blinkers > div.play {
+  animation-play-state: running;
+}
+
+.buttons-n-blinkers:hover > div.play {
+  animation-play-state: paused;
 }

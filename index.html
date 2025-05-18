@@ -6,9 +6,15 @@
   <title>Your Project Title</title>
   <link rel="stylesheet" href="./test.css" />
   <script type = "module" src = "./src/components/weather-widget2.js"></script>
+  <script type = "module" src = "./src/components/task-manager.js"></script>
+  <script type = "module" src = "./src/components/weather-widget2.js"></script>
+  <script type = "module" src = "./src/components/login-widget.js"></script>
+  <script type = "module" src = "./src/components/ad-widget.js"></script>
+
+
 </head>
 <body class="bgtitle">
-  
+  <login-widget></login-widget>
 
   <div class="main-box">
 
@@ -29,13 +35,19 @@
 
 
         <div class="side-tab">
-          <ul>
-            <li><a>[Link here]</a></li>
-            <li><a>[Link here]</a></li>
-            <li><a>[Link here]</a></li>
-            <li><a>[Link here]</a></li>
+          <div class = "link-page">
+            <ul>
+              <li><a>[Link here]</a></li>
+              <li><a>[Link here]</a></li>
+              <li><a>[Link here]</a></li>
+              <li><a>[Link here]</a></li>
+            </ul>
+          </div>
 
-          </ul>
+          <div class = "music-player">
+            [Radio player here]
+          </div>
+
 
         </div>
 
@@ -75,11 +87,49 @@
 
       <!-- Row 3: Footer or description -->
       <div class="grid-dashboard">
-        <div class = "todo">[todo list here]</div>
-        
+        <div class = "todo-ad">
 
+          <div class = "todo">
+            <data-manager></data-manager>
+
+          </div>
+
+          <div class = "ad">
+            <p><strong>This site was brought to you by: </strong></p>
+            <ad-widget></ad-widget>
+
+          </div>
+        
+        </div>
         <div class = "weather">
-          <weather-widget2></weather-widget2>
+          
+          <!-- Scrolling marquee codepen -->
+
+          <div>
+            <div class="buttons-n-blinkers">
+            <div>
+              <img src="./src/components/gifs/2hu.gif">
+              
+              <img src="./src/components/gifs/aimlink.gif">
+              <img src="./src/components/gifs/dreamcast.gif">
+              
+              <img src="./src/components/gifs/evangelion.gif">
+              <img src="./src/components/gifs/floppy.gif">
+              <img src="./src/components/gifs/gameboy_advance_net.gif">
+              <img src="./src/components/gifs/miku.gif">
+              <img src="./src/components/gifs/plasticlove.gif">
+              <img src="./src/components/gifs/sailormoon.gif">
+              
+            </div>
+          </div>
+
+          </div>
+
+          <!--aaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
+          <div style = "margin-top: 20px;">
+            <weather-widget2></weather-widget2>
+          </div>
+          
         </div>
       </div>
 
@@ -91,5 +141,7 @@
     <img src = "https://files.catbox.moe/qgv5mf.gif" style = "margin-left: 150px;">
   </div>
 
+
+<script type="text/javascript" src="/script.js"></script>
 </body>
 </html>

@@ -19,7 +19,7 @@ class DailyWeatherGraph extends LitElement {
       
     }
     .title-bar {
-      background-image: linear-gradient(to right,rgb(37, 59, 24),rgb(80, 98, 61));  
+      background-image: linear-gradient(to right,rgb(37, 59, 24),rgb(110, 144, 74));  
       color: white;  
       font-weight: bold;
     }
@@ -127,7 +127,7 @@ class DailyWeatherGraph extends LitElement {
   }
 
   async fetchDailyWeather() {
-    const url = 'https://api.open-meteo.com/v1/forecast?latitude=-33.87&longitude=151.21&daily=temperature_2m_mean,windspeed_10m_max,winddirection_10m_dominant,weathercode,temperature_2m_max,temperature_2m_min,precipitation_probability_mean,relative_humidity_2m_mean&timezone=auto';
+    const url = 'https://api.open-meteo.com/v1/forecast?latitude=-33.86882&longitude=151.20930&daily=temperature_2m_mean,windspeed_10m_max,winddirection_10m_dominant,weathercode,temperature_2m_max,temperature_2m_min,precipitation_probability_mean,relative_humidity_2m_mean&timezone=auto';
     try {
       const res = await fetch(url);
       const data = await res.json();
@@ -148,7 +148,7 @@ class DailyWeatherGraph extends LitElement {
   }
 
   async fetchHourlyData() {
-    const url = "https://api.open-meteo.com/v1/forecast?latitude=-33.87&longitude=151.21&hourly=temperature_2m,relativehumidity_2m,precipitation_probability,windspeed_10m,winddirection_10m,weathercode&timezone=auto";
+    const url = "https://api.open-meteo.com/v1/forecast?latitude=-33.86882&longitude=151.20930&hourly=temperature_2m,relativehumidity_2m,precipitation_probability,windspeed_10m,winddirection_10m,weathercode&timezone=auto";
     try {
       const res = await fetch(url);
       const json = await res.json();
@@ -203,7 +203,7 @@ class DailyWeatherGraph extends LitElement {
           <div class="title-bar-controls">
             <button aria-label="Minimize"></button>
             <button aria-label="Maximize"></button>
-            <button aria-label="Close" @click="${this.closeWidget}"></button>
+            <button aria-label="Close"></button>
           </div>
         </div>
 
