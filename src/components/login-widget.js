@@ -30,7 +30,13 @@ class LoginWidget extends LitElement {
     }).then(result => result.json()).then(response => {
         this.user = response;
         storeUser(response);
+        setTimeout(() => {
+          window.location.reload();
+        }, 100);
     })
+
+    
+
   }
 
   logout() {

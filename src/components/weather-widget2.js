@@ -90,7 +90,7 @@ class DailyWeatherGraph extends LitElement {
     display: block;
     height: 100%;
     background: #0078d7;
-    animation: loadBar 2.0s steps(8, end) forwards;
+    animation: loadBar 1.5s steps(8, end) forwards;
     width:720px;
   }
   `;
@@ -119,7 +119,7 @@ class DailyWeatherGraph extends LitElement {
     setTimeout(() => {
       this.minTimePassed = true;
       this.requestUpdate();
-    }, 2000);
+    }, 1500);
 
 
     this.fetchDailyWeather();
