@@ -192,7 +192,7 @@ body {
 }
 
 .buttons-n-blinkers > div {
-  animation: marquee 10s linear infinite;
+  animation: marquee 12.1s linear infinite;
   animation-play-state: paused;
   animation-delay: -6s; /* This MUST be -duration/2 */
   width: 100%;
